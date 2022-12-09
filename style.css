@@ -1,0 +1,125 @@
+/* Reset CSS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Algemene instellingen */
+
+:root {
+  --color-dark: black;
+  --color-ligt: white;
+  --color-theme: rgb(247, 247, 247);
+  --color-btn: green;
+
+  background-color: var(--color-theme);
+  color: var(--color-dark);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  margin: 2rem;
+}
+
+/* Algemene instellingen Main */
+
+main {
+  margin-top: 2rem;
+  border-style: solid;
+  border-radius: 0.5%;
+  border-width: 1px;
+  padding: 1rem;
+  background-color: var(--color-ligt);
+  box-shadow: 2px 6px 6px 0px #7f827b;
+}
+
+textarea {
+  resize: none;
+  height: 2rem;
+  width: 100%;
+}
+
+/* Style input section */
+
+.toevoegen {
+  margin-bottom: 2rem;
+}
+
+#input {
+  width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.flex-row {
+  display: flex;
+  gap: 1rem;
+}
+
+#addButton {
+  background-color: var(--color-btn);
+  color: var(--color-ligt);
+  border-width: 1px;
+  padding: 0.5em;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  height: 2rem;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style listitems */
+
+.list-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-field {
+  border: hidden;
+  border-bottom-style: dotted;
+  border-width: 1px;
+}
+
+.bin {
+  width: 20px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+li {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.done {
+  text-decoration: line-through;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="api-client.js"> type = "data/javascript"</script>
+    <script defer src="script.js"> type = "text/javascript"</script>
+    <link rel="stylesheet" href="style.css">
+    <title>Opdracht Todo list</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">ToDo list</h1>
+    </header>
+    <main>
+        <div class="toevoegen">
+            <div id="my-form">
+                <label class="bold" for="input">Voeg een item toe</label>
+                <div class="flex-row">
+                    <textarea name="input" id="input"></textarea>
+                    <button id="addButton">Add</button>
+                </div>
+            </div>
+            <ul class="list-flex" id="todoList">
+                <!-- Hier worden de todo items ingeladen -->
+            </ul>
+        </div>
+    </main>
+
+</body>
+
+</html>
